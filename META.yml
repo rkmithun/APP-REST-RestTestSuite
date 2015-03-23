@@ -16,10 +16,10 @@ name: APP-REST-RestTestSuite
 provides:
   APP::REST::ParallelMyUA:
     file: lib/APP/REST/ParallelMyUA.pm
-    version: 0.01
+    version: 0.03
   APP::REST::RestTestSuite:
     file: lib/APP/REST/RestTestSuite.pm
-    version: 0.02
+    version: 0.03
 requires:
   File::Basename: 0
   File::Path: 0
@@ -30,4 +30,5 @@ requires:
   Time::HiRes: 0
 resources:
   license: http://opensource.org/licenses/artistic-license-2.0.php
-version: 0.02
+  repository: https://github.com/rkmithun/APP-REST-RestTestSuite
+version: 0.03

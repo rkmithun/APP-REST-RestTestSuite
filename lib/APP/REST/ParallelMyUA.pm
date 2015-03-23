@@ -22,20 +22,18 @@ APP::REST::ParallelMyUA -
 
 =head1 VERSION
 
-Version 0.01
+Version 0.03
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
+#Quick summary of what the module does.
+#Perhaps a little code snippet.
 
 use APP::REST::ParallelMyUA;
-
 my $pua = APP::REST::ParallelMyUA->new();
 
 

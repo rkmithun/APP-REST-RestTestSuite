@@ -25,11 +25,11 @@ APP::REST::RestTestSuite - Suite for testing restful web services
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -40,7 +40,7 @@ $suite->execute_test_cases( $suite->get_test_cases() );
 my ( $cases_in_config, $executed, $skipped, $passed, $failed ) =
   $suite->get_result_summary();
 
-OR
+#OR
 
 use APP::REST::RestTestSuite;
 
@@ -1049,6 +1049,12 @@ CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
 CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+=cut
+
+=head1 REPOSITORY
+
+L<https://github.com/rkmithun/APP-REST-RestTestSuite>
 
 =cut
 

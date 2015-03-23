@@ -39,18 +39,21 @@
    "provides" : {
       "APP::REST::ParallelMyUA" : {
          "file" : "lib/APP/REST/ParallelMyUA.pm",
-         "version" : "0.01"
+         "version" : "0.03"
       },
       "APP::REST::RestTestSuite" : {
          "file" : "lib/APP/REST/RestTestSuite.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "license" : [
          "http://opensource.org/licenses/artistic-license-2.0.php"
-      ]
+      ],
+      "repository" : {
+         "url" : "https://github.com/rkmithun/APP-REST-RestTestSuite"
+      }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }

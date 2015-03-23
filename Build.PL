@@ -13,7 +13,11 @@ my $builder = Module::Build->new(
     script_files      => [
         'script/rest-client', 
     ],
-
+    meta_merge        => {
+        resources => {
+            repository => 'https://github.com/rkmithun/APP-REST-RestTestSuite'
+        }
+    },
     configure_requires => {
         'Module::Build' => 0,
     },

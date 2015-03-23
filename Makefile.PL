@@ -5,19 +5,19 @@ WriteMakefile
   'EXE_FILES' => [
                    'script/rest-client'
                  ],
-  'VERSION_FROM' => 'lib/APP/REST/RestTestSuite.pm',
-  'INSTALLDIRS' => 'site',
   'NAME' => 'APP::REST::RestTestSuite',
   'PL_FILES' => {},
   'PREREQ_PM' => {
-                   'Test::More' => 0,
-                   'Time::HiRes' => 0,
                    'HTTP::Request' => 0,
-                   'LWP::Parallel::UserAgent' => 0,
-                   'File::Basename' => 0,
-                   'LWP::UserAgent' => 0,
+                   'File::Path' => 0,
+                   'Time::HiRes' => 0,
+                   'Test::More' => 0,
                    'Getopt::Long' => 0,
-                   'File::Path' => 0
-                 }
+                   'LWP::Parallel::UserAgent' => 0,
+                   'LWP::UserAgent' => 0,
+                   'File::Basename' => 0
+                 },
+  'VERSION_FROM' => 'lib/APP/REST/RestTestSuite.pm',
+  'INSTALLDIRS' => 'site'
 )
 ;
