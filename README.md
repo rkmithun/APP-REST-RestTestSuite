@@ -1,14 +1,14 @@
 
-Name : 
+##Name : 
       APP::REST::RestTestSuite
 
-Description:
+##Description:
       Rest Test Suite is a program that helps to automate the testing of Restfull Web services. 
       This Distribution is packaged with a CLI utility (rest-client)
-
-rest-client => Test automation tool for restful web services
+      rest-client is the test automation CLI tool for testing restful web services
  
-Usage: rest-client [options] command [...]
+##Usage: 
+      rest-client [options] command [...]
  
 Options:
   -h,--help                 Display this usage. 
@@ -21,7 +21,7 @@ Commands:
   -r,--run-test-suite       Test the configured web services defined in the config file.
   -g,--get-sample-config    Get a sample config file to configure your web services as test suite. 
  
-Note: 
+***Note: 
 By default tool uses the sample-config file. You need to get that and configure the suite.
  
 Examples:
