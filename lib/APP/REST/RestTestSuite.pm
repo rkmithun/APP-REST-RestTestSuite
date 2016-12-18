@@ -33,28 +33,27 @@ our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
-use APP::REST::RestTestSuite;
-my $suite = APP::REST::RestTestSuite->new();
+    use APP::REST::RestTestSuite;
+    my $suite = APP::REST::RestTestSuite->new();
+    
+    $suite->execute_test_cases( $suite->get_test_cases() );
+    my ( $cases_in_config, $executed, $skipped, $passed, $failed ) =
+      $suite->get_result_summary();
 
-$suite->execute_test_cases( $suite->get_test_cases() );
-my ( $cases_in_config, $executed, $skipped, $passed, $failed ) =
-  $suite->get_result_summary();
+---OR---
 
-#OR
+    use APP::REST::RestTestSuite;
+    
+    # overrides the default config and log file paths
+    my $suite = APP::REST::RestTestSuite->new(
+        REST_CONFIG_FILE => <config file>,
+        LOG_FILE_PATH    => <path>,
+    );
 
-use APP::REST::RestTestSuite;
+    $suite->execute_test_cases( $suite->get_test_cases() );
+    my ( $cases_in_config, $executed, $skipped, $passed, $failed ) =
+      $suite->get_result_summary();
 
-# overrides the default config and log file paths
-my $suite = APP::REST::RestTestSuite->new(
-    REST_CONFIG_FILE => <config file>,
-    LOG_FILE_PATH    => <path>,
-);
-
-$suite->execute_test_cases( $suite->get_test_cases() );
-my ( $cases_in_config, $executed, $skipped, $passed, $failed ) =
-  $suite->get_result_summary();
-
- 
 =head1 DESCRIPTION
 
 APP::REST::RestTestSuite object is instantiated with the data in config file. 
